@@ -1,0 +1,14 @@
+version: 2
+
+models:
+  - name: dq-check
+    columns:
+      - name: policy_id
+        tests:
+          - unique
+          - not_null
+          # - not_empty
+      # - name: status_code
+      #   tests:
+      #     - accepted_values:
+      #         values: ['INFORCE']
