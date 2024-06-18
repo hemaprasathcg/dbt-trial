@@ -24,7 +24,7 @@ macro-paths:
 snapshot-paths:
   - snapshots
 
-target-path: dev # directory which will store compiled SQL files
+# target-path: dev # directory which will store compiled SQL files
 clean-targets:
   # directories to be removed by `dbt clean`
   - target
@@ -48,7 +48,7 @@ models:
   elementary:
     ## elementary models will be created in the schema '<your_schema>_elementary'
     +schema: elementary
-    +materialized: table
+    # +materialized: view
 
 flags:
   require_explicit_package_overrides_for_builtin_materializations: false
